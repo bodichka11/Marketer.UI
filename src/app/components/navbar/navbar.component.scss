@@ -1,0 +1,56 @@
+.Authenticated {
+    height: 10px;
+    position: fixed;
+    right: 20px; /* Adjust the right position as needed */
+    background-color: transparent;
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid black; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  /* Styling for the authenticated username */
+  .Authenticated p {
+    color: black;
+    margin-top: 12px;
+    margin-right: 5px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  /* Styling for the list of links */
+  .Authenticated ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Styling for each list item */
+  .Authenticated li {
+    margin-bottom: 10px;
+  }
+  
+  /* Styling for the links */
+  .Authenticated a {
+    text-decoration: none;
+    color: #007bff; /* Blue color for links */
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  /* Hover effect for links */
+  .Authenticated a:hover {
+    color: #0056b3; /* Darker blue on hover */
+  }
+  
+  /* Styling for the logout link */
+  .Authenticated .logout {
+    color: #dc3545; /* Red color for logout link */
+  }
+  
+  /* Hover effect for logout link */
+  .Authenticated .logout:hover {
+    color: #bd2130; /* Darker red on hover */
+  }
+  

@@ -1,0 +1,23 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">M-Marketer</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">Home</a>
+        <a class="navbar-brand" href="/chat">Chat</a>
+      </div>
+      <div class="Authenticated">
+        <div *ngIf="isUserAuthenticated()" style="color:blue;">
+          <p>{{user?.username}}</p>
+        </div>
+        <br>
+        <ul>
+          <button *ngIf="isUserAuthenticated()" (click)="logOut()" routerLink="/" type="button" class="btn btn-outline-danger">Log out</button>
+          <button *ngIf="!isUserAuthenticated()" routerLink="/login" type="button" class="btn btn-outline-dark">Log in</button>
+        </ul>
+      </div>
+    </nav>

@@ -1,0 +1,64 @@
+$light-bg: rgb(104, 10, 10);
+$primary-color: #000e1d;
+
+body {
+ background-color: $light-bg;
+}
+
+.wrapper {
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.356);
+    border-radius: 20px;
+    border: 5px solid black;
+}
+.container {
+ max-width: 400px;
+ margin: 0 auto;
+ padding: 100px 0;
+}
+
+.form-signin-heading {
+ text-align: center;
+ color: $primary-color;
+}
+
+.alert {
+ text-align: center;
+ color: #a94442;
+ background-color: #f2dede;
+ border-color: #ebccd1;
+ padding: 15px;
+ margin-bottom: 20px;
+ border: 1px solid transparent;
+ border-radius: 4px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+ margin-bottom: 20px;
+ border-radius: 4px;
+ padding: 10px;
+ width: 100%;
+ box-sizing: border-box;
+ font-size: 16px;
+}
+
+button[type="submit"] {
+ background-color: $primary-color;
+ border: none;
+ border-radius: 4px;
+ color: white;
+ padding: 10px 20px;
+ text-align: center;
+ text-decoration: none;
+ display: inline-block;
+ font-size: 16px;
+ margin: 4px 2px;
+ cursor: pointer;
+}
+
+button[type="submit"]:disabled {
+ background-color: #6c757d;
+ cursor: not-allowed;
+}
